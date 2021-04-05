@@ -87,7 +87,7 @@ En muchos casos `la terminal web no está habilitada por defecto`, por lo que de
 
 Una vez habilitada se verá similar a esto:
 
-![Terminal](https://mishorasweb.com/images/guia-prod/terminal.png)
+![Terminal](https://mishorasweb.com/img/guia-prod/terminal.png)
 
 <a id="Comenzando"></a>
 ## Comenzando 🚀️
@@ -190,7 +190,7 @@ Como buena practica separaremos el proyecto en dos secciones, la carpeta "public
 
 Moveremos el contenido la carpeta "public" ``` /home/tu-usuario/tu-proyecto-laravel/public ``` hacia ``` /home/public_html ```, esta ruta es donde accede el usuario cuando visita la página. La carpeta `public_html` será similar a esta:
 
- ![public_html](https://mishorasweb.com/images/guia-prod/public.png)
+ ![public_html](https://mishorasweb.com/img/guia-prod/public.png)
 
 _Las carpetas y archivos varían según cada proyecto pero la estructura es similar._
 
@@ -205,11 +205,11 @@ _Este archivo se encarga de hacer funcionar nuestra aplicación, si lo examinamo
 
 La primera inclusión es: `__DIR__.'/../vendor/autoload.php `
 
-![vendor](https://mishorasweb.com/images/guia-prod/vendor.png)
+![vendor](https://mishorasweb.com/img/guia-prod/index-autoload.png)
  
 La segunda inclusión es: `__DIR__.'/../bootstrap/app.php `
 
-![bootstrap](https://mishorasweb.com/images/guia-prod/bootstrap.png)
+![bootstrap](https://mishorasweb.com/img/guia-prod/index-bootstrap.png)
 
 Si lo analizamos, las inclusiones buscan las carpetas `/vendor` y `/bootstrap` que se encuentren en esa ruta, pero estos no existen allí porque **los separamos de public en el paso anterior!**.
 
@@ -242,15 +242,15 @@ _Crearemos todo mediante la interfaz web._
 `Databases` -> `MySQL Databases`
 _Aquí podremos crear una **nueva base** para nuestro proyecto._
 
-![db-crear](https://mishorasweb.com/images/guia-prod/db-crear.png)
+![db-crear](https://mishorasweb.com/img/guia-prod/db-crear.png)
 
 _**Creamos el usuario** que utilizará la base de datos._
 
-![db-crear](https://mishorasweb.com/images/guia-prod/db-user.png)
+![db-crear](https://mishorasweb.com/img/guia-prod/db-user.png)
 
 _**Agregamos el usuario** a la base de datos para que la pueda manipular._
 
-![db-crear](https://mishorasweb.com/images/guia-prod/db-add-user.png)
+![db-crear](https://mishorasweb.com/img/guia-prod/db-agregar-user.png)
 
 _Si tenemos acceso a un gestor de BD podemos comprobar que la base se haya configurado de manera correcta._
 
@@ -275,7 +275,7 @@ _Cambio de variables: Revisaremos 3 secciones de nuestro .env_
 <a id="Variables_APP_"></a>
 #### Variables APP_
 
-![env_data](https://mishorasweb.com/images/guia-prod/env-data.png)
+![env_data](https://mishorasweb.com/img/guia-prod/env-app.png)
 
 * ENV = `local` por `production`
 
@@ -302,7 +302,7 @@ _Cambiamos la URL local por nuestro dominio._
 
 ❗️ Es aquí cuando utilizamos los datos `usuario`, `contraseña` y `base de datos` que habíamos guardado antes.
 
-![env_db](https://mishorasweb.com/images/guia-prod/env-bd.png)
+![env_db](https://mishorasweb.com/img/guia-prod/env-db.png)
 
 * DATABASE = `tu-base-local` por `tu-base-web`
 
@@ -323,7 +323,7 @@ _Cambiamos por la contraseña de ese usuario._
 
 En este ejemplo se ve el uso de [Mailtrap](https://mailtrap.io/) para la prueba de correos durante desarrollo, vamos a cambiar esto.
 
-![env_mail](https://mishorasweb.com/images/guia-prod/env-mail.png)
+![env_mail](https://mishorasweb.com/img/guia-prod/env-mail.png)
 
 _Necesitamos contactar con nuestro proveedor para obtener algunos datos:_ `MAILER`,  `PORT` nos lo brinda nuestro proveedor.
 
